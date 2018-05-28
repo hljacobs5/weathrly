@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Data from './MockData.js';
+import CurrentWeather from './CurrentWeather/CurrentWeather.js';
+import Forecast from './Forecast/Forecast.js';
+import { data } from './MockData.js';
 
 class App extends Component {
+
   render() {
+  console.log(data)
     return (
-     <h1>Weatherly</h1>
-     <CurrentWeather currentWeather={currentObservation}/>
+      <div>
+        <h1>Weathrly</h1>
+        <CurrentWeather
+          currentWeather={data.current_observation} 
+          />
+
+        <Forecast tenDayForecast={data.forecast.simpleforecast.forecastday} />
       </div>
     );
   }
