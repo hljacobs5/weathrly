@@ -11,4 +11,4 @@ const Day = (props) => {
   )
 }
 
-  export default Day;
+export default Day;
