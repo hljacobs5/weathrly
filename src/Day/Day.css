@@ -1,4 +1,11 @@
 .day-card {
-  margin-left: 2%;
-  
+  border: 2px solid #63595C;
+  box-shadow: 3px 2px 15px -3px #000;
+  height: 210px;
+  margin: 10px;
+  width: 300px;
+  color: black;
+  background-color: #FFF;
+  text-align: center;
+  font-family: 'Raleway Dots', cursive;
 }

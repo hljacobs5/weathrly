@@ -1,10 +1,12 @@
 import React from 'react';
+import './CurrentWeather.css';
 
 const CurrentWeather = (props) => {
   console.log(props);
   return (
     <div>
-      <h2>Current Weather</h2>
+      <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet" />
+      <h3>Current Weather</h3>
       <h3>{props.currentWeather.display_location.city}</h3>
       <h3>{props.currentWeather.weather}</h3>
       <h3>{props.currentWeather.local_time_rfc822}</h3>

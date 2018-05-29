@@ -6,7 +6,6 @@ const Forecast = (props) => {
   const array = props.tenDayForecast.slice(0,10)
   return (
     <div className='day-container' >
-      <h1>10 Day Forecast</h1>
       {
         array.map((day, i) => {
              return (
