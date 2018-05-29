@@ -17,7 +17,6 @@ const Forecast = (props) => {
       }
 
     </div>
-
     <div className='day-container-2' > {
       array2.map((day, i) => {
         return(

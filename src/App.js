@@ -18,7 +18,7 @@ class App extends Component {
           />
         <h2>Seven Hour Forecast</h2>
         <Hourly 
-          sevenHourForecast={data.forecast.simpleforecast.forecastday} 
+          sevenHourForecast={data.forecast.txt_forecast.forecastday} 
           />
         <h2>Ten Day Forecast</h2>
         <Forecast 
