@@ -1,12 +1,19 @@
 .hour-card {
   border: 2px solid #63595C;
   box-shadow: 3px 2px 15px -3px #000;
-  height: 320px;
+  height: 250px;
   margin: 10px;
   width: 300px;
   color: black;
   background-color: #FFF;
   text-align: center;
   font-family: 'Raleway Dots';
+}
 
+.hour {
+  margin-top: 20px;
+}
+
+.high-low {
+  margin-top: 20px;
 }

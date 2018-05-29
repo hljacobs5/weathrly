@@ -3,17 +3,29 @@ import Day from '../Day/Day.js'
 import './Forecast.css';
 
 const Forecast = (props) => {
-  const array = props.tenDayForecast.slice(0,10)
+  const array1 = props.tenDayForecast.slice(0, 5)
+  const array2 = props.tenDayForecast.slice(5, 10)
   return (
-    <div className='day-container' >
+    <div>
+    <div className='day-container-1' >
       {
-        array.map((day, i) => {
+        array1.map((day, i) => {
              return (
              <Day day={day} key={i} />    
            )
         })
       }
 
+    </div>
+
+    <div className='day-container-2' > {
+      array2.map((day, i) => {
+        return(
+          <Day day={day} key={i} />
+        )
+      })
+    }
+    </div>
     </div>
   )
 }

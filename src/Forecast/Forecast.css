@@ -1,3 +1,7 @@
-.day-container {
+.day-container-1 {
+  display: flex;
+}
+
+.day-container-2 {
   display: flex;
 }

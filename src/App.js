@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CurrentWeather from './current_weather/CurrentWeather.js';
+import CurrentWeather from './CurrentWeather/CurrentWeather.js';
 import Forecast from './Forecast/Forecast.js';
 import Hourly from './hourly_forecast/Hourly.js';
 import { data } from './MockData.js';
@@ -18,7 +18,7 @@ class App extends Component {
           />
         <h2>Seven Hour Forecast</h2>
         <Hourly 
-          sevenHourForecast={data.forecast.txt_forecast.forecastday} 
+          sevenHourForecast={data.forecast.simpleforecast.forecastday} 
           />
         <h2>Ten Day Forecast</h2>
         <Forecast 
