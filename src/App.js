@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {
       currentWeather: [],
       sevenHourForecast: undefined,
-      tenDayForecast: []
+      tenDayForecast: undefined
     }
   }
 
@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   getData () {
-    let url = `http://api.wunderground.com/api/${Key}/conditions/hourly/forecast10day/q/CA/San_Diego.json`;
+    let url = `http://api.wunderground.com/api/${Key}/conditions/geolookup/hourly/forecast10day/q/CA/San_Diego.json`;
     fetch(url)
     .then(response=> response.json()) 
     .then(userInput => {
@@ -41,7 +41,7 @@ class App extends Component {
 
 
   render() {
-    if(this.state.sevenHourForecast === undefined) {
+    if(this.state.sevenHourForecast === undefined || this.state.tenDayForecast === undefined) {
       return(
         <div>loading, please wait..</div>
         )
@@ -55,6 +55,10 @@ class App extends Component {
         <h2>Seven Hour Forecast</h2>        
         <Hourly 
           sevenHourForecast={this.state.sevenHourForecast} 
+          />
+        <h2>Ten Day Forecast</h2>
+        <Forecast 
+          tenDayForecast={this.state.tenDayForecast} 
           />
       </div>
        
