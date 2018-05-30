@@ -4,7 +4,7 @@ import './Hourly.css';
 
 const Hourly = (props) => {
   console.log(props)
-  const array = props.sevenHourForecast.slice(0,7)
+  const array = props.sevenHourForecast.hourly_forecast.slice(0,7)
   return (
     <div className='hourly-container'>
       {
